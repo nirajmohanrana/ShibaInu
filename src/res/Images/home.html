@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ShibaInu</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/84d3b7ff1f.js" crossorigin="anonymous"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Firebase Scrpt.js 2-->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDjirj7idqE-hb60fCDkj6Yw7JHbfSzwz0",
+      authDomain: "shibainu-8caa0.firebaseapp.com",
+      projectId: "shibainu-8caa0",
+      storageBucket: "shibainu-8caa0.appspot.com",
+      messagingSenderId: "549170528951",
+      appId: "1:549170528951:web:659a27e0f209c07c02c332",
+      measurementId: "G-BCNCPD7BDQ"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <!-- Firebase Scrpt.js -->
+  <script src="script.js"></script>
+  <!-- <script src="script2.js"></script> -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js"></script>
+
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="l.html">ShibaInu</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!-- <a class="Bonding" href=""> -->
+                <div w3-include-html="content.html"></div>
+
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa fa-user"></i> Log In</button>
+        </div>
+
+        <div class="col-lg-6">
+            <img class="title-image" src="iphone6.png" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+  
+            <!-- UserName input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="user" class="form-control form-control-lg"
+                  placeholder="Enter a valid username" />
+              </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="email" class="form-control form-control-lg"
+                placeholder="Enter a valid email address" />
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="password" class="form-control form-control-lg"
+                placeholder="Enter password" />
+            </div>
+
+            <!-- FavDog input -->
+            <div class="form-outline mb-3">
+                <input type="text" id="favdog" class="form-control form-control-lg"
+                  placeholder="Enter Favorite Dog" />
+              </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg" onclick="login()"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            </div>
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg" onclick="register()"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+</html>
