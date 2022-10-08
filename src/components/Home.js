@@ -9,6 +9,7 @@ import TCLogo from "../res/Images/TechCrunch.png";
 import TNW from "../res/Images/tnw.png";
 import Biz from "../res/Images/bizinsider.png";
 import MashLogo from "../res/Images/mashable.png";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -47,9 +48,14 @@ export default function Home() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#cta">
-                      Download
-                    </a>
+                    <button className="btn btn-dark">
+                      <NavLink
+                        style={{ textDecoration: "none", color: "white" }}
+                        to="/dashboard"
+                      >
+                        Dashboard
+                      </NavLink>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -60,17 +66,21 @@ export default function Home() {
                 <h1 className="big-heading">
                   Meet new and interesting dogs nearby.
                 </h1>
-                <button
-                  type="button"
-                  className="btn btn-dark btn-lg download-button"
-                >
-                  <i className="fab fa-apple" /> Download
+                <button className="btn btn-dark btn-lg download-button">
+                  <Link
+                    style={{ textDecoration: "none", color: "white" }}
+                    to="/signup"
+                  >
+                    <i className="fas fa-user" /> Sign Up
+                  </Link>
                 </button>
-                <button
-                  type="button"
-                  className="btn btn-outline-light btn-lg download-button"
-                >
-                  <i className="fab fa-google-play" /> Download
+                <button className="btn btn-outline-light btn-lg download-button">
+                  <Link
+                    style={{ textDecoration: "none", color: "white" }}
+                    to="/login"
+                  >
+                    <i className="fa fa-key" /> Log In
+                  </Link>
                 </button>
               </div>
               <div className="col-lg-6">
